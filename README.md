@@ -8,7 +8,3 @@ cd how-to-reactjs
 npm install
 npm start
 ```
-
-```
-
-```
