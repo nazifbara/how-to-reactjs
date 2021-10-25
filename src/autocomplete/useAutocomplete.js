@@ -18,9 +18,9 @@ const defaultFilter = (inputValue, items) =>
     }))
     .slice(0, 13);
 
-const useAutocomplete = () => {
+const useAutocomplete = (initialState = INITIAL_STATE) => {
   const [{ value, suggestions, currentFocus }, setState] =
-    useState(INITIAL_STATE);
+    useState(initialState);
 
   const handleValueChange = (newValue, items, { customFilter } = {}) => {
     const filter = customFilter ?? defaultFilter;
