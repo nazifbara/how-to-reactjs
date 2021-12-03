@@ -15,10 +15,12 @@ const Slideshow = (props) => {
 
   const moveTo = (newIndex) => () => {
     if (newIndex === -1) {
+      // jump from the first image to the last
       setState((s) => ({ ...s, activeIndex: items.length - 1 }));
       return;
     }
     if (newIndex === items.length) {
+      // jump from the last image to the first
       setState((s) => ({ ...s, activeIndex: 0 }));
       return;
     }
