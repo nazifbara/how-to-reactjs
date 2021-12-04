@@ -29,7 +29,7 @@ const Slideshow = (props) => {
   };
 
   return (
-    <SlideWraper>
+    <SlideWrapper>
       <ImageBox>
         <img alt={items[activeIndex].caption} src={items[activeIndex].image} />
         <NavButton position="left" onClick={moveTo(activeIndex - 1)}>
@@ -49,7 +49,7 @@ const Slideshow = (props) => {
           />
         ))}
       </ThumbnailList>
-    </SlideWraper>
+    </SlideWrapper>
   );
 };
 
@@ -122,7 +122,7 @@ const ImageBox = styled.div`
   }
 `;
 
-const SlideWraper = styled.div`
+const SlideWrapper = styled.div`
   position: relative;
   width: 100vw;
   height: 100vh;
